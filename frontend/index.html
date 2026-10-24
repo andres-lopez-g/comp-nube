@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Parcial 1 Andres Lopez — Miniaturas de imagen</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <h1>Parcial 1 Andres Lopez — Miniaturas de imagen</h1>
+</header>
+<main>
+  <section class="card">
+    <h2>1. Subir imagen</h2>
+    <p class="status">La web es estática: sube directo al bucket público (sin backend).</p>
+    <div class="row">
+      <input type="file" id="file" accept="image/*">
+      <button id="btn">Subir a S3</button>
+    </div>
+    <p id="status" class="status">Elige una imagen y pulsa Subir.</p>
+  </section>
+  <section class="card">
+    <h2>2. Galería <button id="refresh">↻ Actualizar</button></h2>
+    <div class="cols">
+      <div><h3>Originales</h3><div id="orig" class="grid"></div></div>
+      <div><h3>Miniaturas</h3><div id="thumbs" class="grid"></div></div>
+    </div>
+  </section>
+</main>
+<script src="config.js"></script>
+<script src="app.js" defer></script>
+</body>
+</html>

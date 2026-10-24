@@ -1,0 +1,86 @@
+<mxfile host="app.diagrams.net" version="24.0.0" type="device">
+  <diagram id="parcial_ajlg" name="parcial_ajlg-arquitectura" background="#111111" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1280" pageHeight="800" math="0" shadow="0">
+    <mxGraphModel dx="1280" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1280" pageHeight="800" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <!-- Titulo -->
+        <mxCell id="parcial_ajlg_title" value="parcial_ajlg · S3 → Lambda → Fargate → S3  (us-east-1)" style="text;html=1;align=left;verticalAlign=middle;fontSize=18;fontStyle=1;fontColor=#FFFFFF;" parent="1" vertex="1">
+          <mxGeometry x="95" y="8" width="700" height="30" as="geometry" />
+        </mxCell>
+        <!-- AWS Cloud -->
+        <mxCell id="parcial_ajlg_cloud" value="AWS Cloud" style="shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_aws_cloud;strokeColor=#FF9900;fillColor=none;dashed=1;verticalAlign=top;align=left;html=1;whiteSpace=wrap;fontSize=13;fontStyle=1;fontColor=#FF9900;spacing=6;" parent="1" vertex="1">
+          <mxGeometry x="90" y="44" width="1100" height="700" as="geometry" />
+        </mxCell>
+        <!-- Region -->
+        <mxCell id="parcial_ajlg_region" value="us-east-1" style="shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_region;strokeColor=#147EBA;fillColor=none;dashed=1;verticalAlign=top;align=left;html=1;whiteSpace=wrap;fontSize=12;fontStyle=1;fontColor=#4EBED9;spacing=6;" parent="1" vertex="1">
+          <mxGeometry x="110" y="84" width="1060" height="640" as="geometry" />
+        </mxCell>
+        <!-- Usuario (fuera del cloud) -->
+        <mxCell id="parcial_ajlg_user" value="Usuario&#xa;web parcial_ajlg" style="sketch=0;outlineConnect=0;fontColor=#FFFFFF;gradientColor=none;fillColor=#232F3E;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=11;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.user;" parent="1" vertex="1">
+          <mxGeometry x="12" y="280" width="62" height="62" as="geometry" />
+        </mxCell>
+        <!-- S3 Originales -->
+        <mxCell id="parcial_ajlg_s3orig" value="S3&#xa;Originales" style="sketch=0;outlineConnect=0;fontColor=#FFFFFF;gradientColor=none;fillColor=#7AA116;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.s3;" parent="1" vertex="1">
+          <mxGeometry x="180" y="280" width="78" height="78" as="geometry" />
+        </mxCell>
+        <!-- Lambda -->
+        <mxCell id="parcial_ajlg_lambda" value="Lambda&#xa;parcial_ajlg_trigger" style="sketch=0;outlineConnect=0;fontColor=#FFFFFF;gradientColor=none;fillColor=#ED7100;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.lambda;" parent="1" vertex="1">
+          <mxGeometry x="430" y="280" width="78" height="78" as="geometry" />
+        </mxCell>
+        <!-- ECR -->
+        <mxCell id="parcial_ajlg_ecr" value="ECR&#xa;parcial-ajlg-thumb" style="sketch=0;outlineConnect=0;fontColor=#FFFFFF;gradientColor=none;fillColor=#ED7100;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=11;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.ecr;" parent="1" vertex="1">
+          <mxGeometry x="700" y="110" width="78" height="78" as="geometry" />
+        </mxCell>
+        <!-- VPC default -->
+        <mxCell id="parcial_ajlg_vpc" value="VPC default" style="shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_vpc;strokeColor=#B481FF;fillColor=none;dashed=1;verticalAlign=top;align=left;html=1;whiteSpace=wrap;fontSize=12;fontStyle=1;fontColor=#B481FF;spacing=6;" parent="1" vertex="1">
+          <mxGeometry x="580" y="216" width="400" height="470" as="geometry" />
+        </mxCell>
+        <!-- AZ -->
+        <mxCell id="parcial_ajlg_az" value="Availability Zone us-east-1a" style="shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_availability_zone;strokeColor=#4EBED9;fillColor=none;dashed=1;verticalAlign=top;align=left;html=1;whiteSpace=wrap;fontSize=11;fontStyle=1;fontColor=#4EBED9;spacing=6;" parent="1" vertex="1">
+          <mxGeometry x="605" y="270" width="350" height="390" as="geometry" />
+        </mxCell>
+        <!-- Public subnet -->
+        <mxCell id="parcial_ajlg_subnet" value="Public subnet" style="shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_subnet;strokeColor=#7AA116;fillColor=#2A4A1F;dashed=1;verticalAlign=top;align=center;html=1;whiteSpace=wrap;fontSize=11;fontStyle=1;fontColor=#9AD06A;spacing=6;opacity=90;" parent="1" vertex="1">
+          <mxGeometry x="630" y="330" width="300" height="300" as="geometry" />
+        </mxCell>
+        <!-- ECS Fargate -->
+        <mxCell id="parcial_ajlg_ecs" value="ECS Fargate&#xa;Contenedor miniaturas" style="sketch=0;outlineConnect=0;fontColor=#FFFFFF;gradientColor=none;fillColor=#ED7100;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.ecs;" parent="1" vertex="1">
+          <mxGeometry x="715" y="440" width="78" height="78" as="geometry" />
+        </mxCell>
+        <!-- S3 Miniaturas -->
+        <mxCell id="parcial_ajlg_s3min" value="S3&#xa;Miniaturas" style="sketch=0;outlineConnect=0;fontColor=#FFFFFF;gradientColor=none;fillColor=#7AA116;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.s3;" parent="1" vertex="1">
+          <mxGeometry x="1030" y="440" width="78" height="78" as="geometry" />
+        </mxCell>
+        <!-- Nota frontend -->
+        <mxCell id="parcial_ajlg_note" value="Web estática en S3 (parcial-ajlg-frontend, pública): el Usuario sube directo al bucket público sin backend. S3, Lambda y ECR son regionales: van dentro de la región pero fuera del VPC. Contenedor on-demand: NO hay ECS Service, solo vive durante el RunTask que lanza la Lambda." style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;fontSize=11;fontColor=#CCCCCC;" parent="1" vertex="1">
+          <mxGeometry x="110" y="640" width="440" height="70" as="geometry" />
+        </mxCell>
+        <!-- Edges -->
+        <mxCell id="parcial_ajlg_e0" value="Sube imagen" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;strokeColor=#B0B0B0;fontColor=#FFFFFF;fontSize=11;" parent="1" source="parcial_ajlg_user" target="parcial_ajlg_s3orig" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="parcial_ajlg_e1" value="Evento S3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;strokeColor=#B0B0B0;fontColor=#FFFFFF;fontSize=11;" parent="1" source="parcial_ajlg_s3orig" target="parcial_ajlg_lambda" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="parcial_ajlg_e2" value="IMAGE_URI" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;strokeColor=#B0B0B0;fontColor=#FFFFFF;fontSize=11;" parent="1" source="parcial_ajlg_lambda" target="parcial_ajlg_ecs" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="parcial_ajlg_e3" value="Imagen original" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;strokeColor=#B0B0B0;fontColor=#FFFFFF;fontSize=11;" parent="1" source="parcial_ajlg_s3orig" target="parcial_ajlg_ecs" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="219" y="620" />
+              <mxPoint x="754" y="620" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="parcial_ajlg_e4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;dashed=1;strokeColor=#B0B0B0;fontColor=#FFFFFF;fontSize=11;" parent="1" source="parcial_ajlg_ecr" target="parcial_ajlg_ecs" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="parcial_ajlg_e5" value="Miniatura" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;strokeColor=#B0B0B0;fontColor=#FFFFFF;fontSize=11;" parent="1" source="parcial_ajlg_ecs" target="parcial_ajlg_s3min" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
